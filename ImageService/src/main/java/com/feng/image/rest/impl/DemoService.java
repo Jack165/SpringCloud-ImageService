@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
@@ -30,7 +32,8 @@ public class DemoService implements IdemoServices{
 	}
 
     @ApiOperation(value = "测试信息" ,  notes="测试",response = DemoMessage.class)  
-    @PostMapping("/test/message")
+    @RequestMapping("/test/message")
+    @ResponseBody
 	@Override
 	public DemoMessage getMessage(String name) {
     	
