@@ -36,7 +36,6 @@ public class DemoService implements IdemoServices{
     @ResponseBody
 	@Override
 	public DemoMessage getMessage(String name) {
-    	
 		DemoMessage message=new DemoMessage();
 		message.code=0;
 		message.message=name+"来自服务端端尾巴！";
