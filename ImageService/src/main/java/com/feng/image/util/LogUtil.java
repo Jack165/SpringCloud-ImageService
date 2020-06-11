@@ -21,12 +21,14 @@ public class LogUtil {
 		 java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
 		 result.put("message", message);
+		 result.put("appname", "imageServer");
 		 LocalDateTime localDate=LocalDateTime.now();
 		 result.put("log_timestamp", localDate.format(formatter));
 		 return result;
 	 }
 	
 	 public static void info(String name,String messsage) {
+		 System.out.println("异步执行");
 		 HashMap<String, Object> params=buildLogCommenParamsMap(messsage);
 		 params.put("method_name", name);
 		 log.info(JSON.toJSONString(params));
