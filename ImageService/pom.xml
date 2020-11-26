@@ -33,6 +33,10 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
 		</dependency>
@@ -48,7 +52,12 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.68</version>
 		</dependency>
-
+		<!-- orc -->
+		<dependency>
+			<groupId>net.sourceforge.tess4j</groupId>
+			<artifactId>tess4j</artifactId>
+			<version>3.4.2</version>
+		</dependency>
 
 
 		<dependency>
@@ -103,6 +112,24 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<archive>
+						<manifest>
+							<mainClass>com.feng.image.util.OCRUtil</mainClass>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+
+					</archive>
+					<classesDirectory>
+					</classesDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
