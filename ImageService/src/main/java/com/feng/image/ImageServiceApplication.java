@@ -8,12 +8,12 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 import com.feng.image.util.LogUtil;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * @author feng
+ */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableAutoConfiguration
-@EnableSwagger2
 @EnableAsync
 public class ImageServiceApplication {
 
