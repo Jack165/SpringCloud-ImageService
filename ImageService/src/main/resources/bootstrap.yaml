@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    nacos:
+        server-addr: 192.168.110.129:8848
+  application:
+    name: imageServer

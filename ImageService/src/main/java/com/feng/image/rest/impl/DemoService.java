@@ -2,6 +2,7 @@ package com.feng.image.rest.impl;
 
 import java.io.IOException;
 
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -22,6 +23,9 @@ import io.swagger.annotations.ApiOperation;
 @Api("测试接口")
 @Controller
 public class DemoService implements IdemoServices {
+
+	@NacosValue(value = "${cache:'默认'}", autoRefreshed = true)
+	private String cache;
 	Logger apmInfoLogger = LoggerFactory.getLogger("APMInfoDev");
 
 	@ApiOperation(value = "测试信息", notes = "测试")
@@ -30,7 +34,7 @@ public class DemoService implements IdemoServices {
 	public String getInfo() {
 		JSONObject j = JSONObject.parseObject("{'b':'2'}");
 		LogUtil.info("getInfo", j.toJSONString());
-		return "info";
+		return cache;
 
 	}
 

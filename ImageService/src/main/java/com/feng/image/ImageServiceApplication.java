@@ -1,9 +1,9 @@
 package com.feng.image;
-
+import com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 import com.feng.image.util.LogUtil;
@@ -13,8 +13,8 @@ import com.feng.image.util.LogUtil;
  * @author feng
  */
 @SpringBootApplication
-@EnableEurekaClient
 @EnableAsync
+@EnableDiscoveryClient
 public class ImageServiceApplication {
 
 	public static void main(String[] args) {
