@@ -7,6 +7,9 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 
+/**
+ * @author feng
+ */
 public class ImageUtil {
 	/**
 	 * 灰化
