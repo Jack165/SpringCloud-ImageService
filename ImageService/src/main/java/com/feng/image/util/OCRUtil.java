@@ -74,7 +74,6 @@ public class OCRUtil {
 				ImageUtil.writImage(bm,"d:/qb.jpg");
 					System.out.println("识别内容是:" + codeString);
 				} catch (TesseractException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 	    }
