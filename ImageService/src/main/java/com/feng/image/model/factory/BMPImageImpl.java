@@ -23,7 +23,7 @@ public class BMPImageImpl implements IImageFatory{
 		try {
 			ImageIO.write(getBuffImage(), type, newFile);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		if(newFile.exists()) {
