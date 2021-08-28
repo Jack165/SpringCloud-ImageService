@@ -1,12 +1,14 @@
 package com.feng.image.model.factory;
 
+import org.springframework.stereotype.Component;
+
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-
+@Component
 public class JPRGCreateImpl implements IcreateImageFactory{
 
 	@Override
