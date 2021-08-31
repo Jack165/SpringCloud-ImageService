@@ -17,7 +17,6 @@ public class BMPCreateImpl2 implements IcreateImageFactory{
 		try {
 			ImageIO.write(new BufferedImage(200,200, Image.SCALE_AREA_AVERAGING), "BMP", file);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(file.exists()) {
