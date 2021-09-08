@@ -19,8 +19,8 @@ public class OssUtil {
         cfg.useHttpsDomains = false;
         UploadManager uploadManager = new UploadManager(cfg);
 //...生成上传凭证，然后准备上传
-        String accessKey = "FsWgU7fJ1TGwK3nGUxG9ClVcRHYY1HFlpAlj65pV7q";
-        String secretKey = "-Pwr2eghHid2K1DrXf2rcTBo1Bh1LcxVBKOMRCrPFsO";
+        String accessKey = "testestetetes";
+        String secretKey = "keytestetetetetetet";
         String bucket = "feixingtianxia";
 //如果是Windows情况下，格式是 D:\\qiniu\\test.png
         String localFilePath = "D:\\house.jar";
