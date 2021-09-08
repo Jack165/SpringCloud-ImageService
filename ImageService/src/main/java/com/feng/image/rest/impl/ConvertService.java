@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.feng.image.model.factory.IImageFatory;
 import com.feng.image.util.ImageUtil;
 import com.feng.image.util.LogUtil;
+import com.feng.image.util.OssUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.codec.binary.Base64;
@@ -14,10 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 
 @Api("转换接口")
@@ -46,6 +44,7 @@ public class ConvertService {
         return base64String;
 
     }
+
 
 
 
