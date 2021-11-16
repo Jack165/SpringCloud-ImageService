@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springboot-admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:10001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ali.feixingtianxia.cn:10080
+server:
+  port: 10001
