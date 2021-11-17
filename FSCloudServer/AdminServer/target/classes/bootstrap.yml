@@ -9,5 +9,7 @@ spring:
     nacos:
       discovery:
         server-addr: ali.feixingtianxia.cn:10080
-server:
+  discovery:
+    server-add:
+     server: ali.feixingtianxia.cn:10080
   port: 10001
