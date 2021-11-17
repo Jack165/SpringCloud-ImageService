@@ -1,0 +1,17 @@
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      column-underline:true
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      db-type: mysql
+    refresh: false
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl:org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.chz.mapper: debug
