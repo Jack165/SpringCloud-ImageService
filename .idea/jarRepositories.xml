@@ -22,6 +22,11 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="nexus" />
+      <option name="name" value="nexus" />
+      <option name="url" value="http://maven.ccc-l.com/repository/maven-snapshots/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="qirui-snapshots" />
       <option name="name" value="qirui private snapshots repository" />
       <option name="url" value="http://nexus2.qirui.com/nexus/content/repositories/qirui-snapshots/" />

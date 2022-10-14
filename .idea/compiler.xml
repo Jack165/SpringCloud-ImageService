@@ -11,8 +11,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AdminServer" target="8" />
-      <module name="FSCloudServer" target="8" />
+      <module name="AdminServer" target="1.8" />
+      <module name="FSCloudServer" target="1.8" />
       <module name="ImageService" target="1.8" />
     </bytecodeTargetLevel>
   </component>

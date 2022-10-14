@@ -46,6 +46,7 @@ public class DemoService implements IdemoServices {
 		DemoMessage message = new DemoMessage();
 		message.code = 0;
 		message.message = name + "来自服务端端尾巴！";
+		LogUtil.info("getMessage",JSONObject.toJSONString(message));
 		return message;
 	}
 

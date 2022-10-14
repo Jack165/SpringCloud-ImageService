@@ -53,6 +53,12 @@
 			<artifactId>thumbnailator</artifactId>
 			<version>0.4.14</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.skywalking/server-core -->
+		<dependency>
+			<groupId>org.apache.skywalking</groupId>
+			<artifactId>server-core</artifactId>
+			<version>8.9.1</version>
+		</dependency>
 
 		<!--json -->
 		<dependency>

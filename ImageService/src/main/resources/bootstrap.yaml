@@ -1,6 +1,6 @@
 spring:
   cloud:
     nacos:
-        server-addr: ali.feixingtianxia.cn:10080
+        server-addr: 139.196.38.232:10080
   application:
     name: imageServer
